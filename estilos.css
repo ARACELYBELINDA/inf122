@@ -1,0 +1,33 @@
+body {
+    background-color: azure;
+    /* Otros estilos para el body según tus preferencias */
+}
+
+h1 {
+    color: rgb(255, 0, 0); /* Cambié "red", "green", "blue" por valores numéricos */
+    /* Otros estilos para h1 según tus preferencias */
+}
+
+p {
+    font-size: 16px; /* Establecí un tamaño de fuente para el párrafo, puedes cambiarlo según tus preferencias */
+    /* Otros estilos para p según tus preferencias */
+}
+
+img {
+    max-width: 25%;
+    max-height: 25%;
+    /* Otros estilos para la imagen según tus preferencias */
+}
+
+ol li {
+    font-size: 30px;
+    color: rgba(90, 9, 110, 0.555);
+    /* Otros estilos para los elementos de la lista ordenada según tus preferencias */
+}
+
+ul li {
+    color: aquamarine;
+    font-weight: bold;
+    background-color: brown;
+    /* Otros estilos para los elementos de la lista desordenada según tus preferencias */
+}

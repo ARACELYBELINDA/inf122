@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER PROYECTO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #008080;
+        }
+
+        p {
+            color: #4CAF50;
+        }
+
+        button {
+            background-color: #008080;
+            color: #fff;
+            padding: 10px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #005656;
+        }
+
+        .task-input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BIENVENIDO AL MINI PROYECTO</h1>
+    <p>Este proyecto muestra la integración de conceptos de HTML, CSS, JavaScript</p>
+    <h1>TO DO LIST</h1>
+    <input type="text" id="nuevaTarea" class="task-input" placeholder="Agregar tarea">
+    <button id="boton" onclick="agregarTarea()">Agregar</button>
+
+    <ul id="tarea-lista">
+    </ul>
+
+    <script>
+        function agregarTarea() {
+            var tarea = document.getElementById("nuevaTarea").value; 
+            var nuevoItem = document.createElement("li");
+            nuevoItem.textContent = tarea;
+            document.getElementById("tarea-lista").appendChild(nuevoItem);
+            document.getElementById("nuevaTarea").value = ""; 
+        }
+    </script>
+</body>
+
+</html>
